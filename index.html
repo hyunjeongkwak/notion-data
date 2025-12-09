@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    text-align: center;
+  }
+
+  /* 기본 상태: 라이트 모드용 이미지 표시 */
+  #img-light {
+    display: block;
+  }
+  #img-dark {
+    display: none;
+  }
+
+  /* 다크 모드 감지 */
+  @media (prefers-color-scheme: dark) {
+    #img-light {
+      display: none;
+    }
+    #img-dark {
+      display: block;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+
+<body>
+  <!-- 라이트 모드 이미지 -->
+  <img id="로고 라이트모드" src="C:\Users\J-US_241226\OneDrive\바탕 화면\20251209\로고 라이트모드.png" alt="Light Logo">
+
+  <!-- 다크 모드 이미지 -->
+  <img id="로고 다크모드" src="C:\Users\J-US_241226\OneDrive\바탕 화면\20251209\로고 다크모드.png" alt="Dark Logo">
+</body>
+</html>
